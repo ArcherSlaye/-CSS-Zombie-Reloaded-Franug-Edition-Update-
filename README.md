@@ -3,17 +3,17 @@ Zombie Reloaded Franug Edition [Remake] by ArcherSlaye
 * Added lot of zombie skins
 * Added lot of humans skins only on [Classic,Hardcore & Riot] While [Nemesis & Boss] is in Development
 * Added 3 gamemodes for ZR [Classic,Nemesis,Boss,Hardcore & Riot]
-* Added new sounds for [Nemesis & Boss]
+* Added new ambient sounds for [Nemesis & Boss]
 * Added Grenade Effects
 * Added Quake Sounds
 * Edited ZR translations
 * Edited Quake cofig & translations
 * Fixed all zombies infect claw
 * Removed all Zombies Vision
-
-Remake Descriptions
-[Zombie |Classic|Hardcore|Riot|Skins]
-* 
+*  ===================
+* Remake Descriptions
+*  ===================
+* Zombie|Classic|Hardcore|Riot|Skins
 * Classic Zombie [Animation]
 * 
 * Corpse
@@ -26,15 +26,20 @@ Remake Descriptions
 * Poison Zombie [Animation]
 * Volatile Zombie
 * Witch Zombie L4D
-[Zombie|Nemesis|Boss|Skins]
-NEMESIS
+*  ===========================
+* [Zombie|Nemesis|Boss|Skins]
+*  ===========================
+* NEMESIS
 * Classic Nemesis
 * Behemoth Nemesis
 * Rotfiend Nemesis
 * Joker Nemesis
 * Swatt Nemesis
 * Mutant Nemesis
-BOSS
+*  ===========================
+* BOSS
 * El Gigante
 * Titan Hulk [CF]
-[
+*  ===========================
+*  TO BE CONTINUED FOR MODELS
+* [FILE WILL UPLOAD TO PUBLIC SOON :) ]
