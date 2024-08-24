@@ -10,9 +10,8 @@ Zombie Reloaded Franug Edition [Remake] by ArcherSlaye
 * Edited Quake cofig & translations
 * Fixed all zombies infect claw
 * Removed all Zombies Vision
-==============================================
-[Remake Descriptions]
-*********************
+
+Remake Descriptions
 [Zombie |Classic|Hardcore|Riot|Skins]
 * 
 * Classic Zombie [Animation]
