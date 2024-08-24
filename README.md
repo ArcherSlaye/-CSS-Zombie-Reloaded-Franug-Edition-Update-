@@ -1,4 +1,5 @@
 Zombie Reloaded Franug Edition [Remake] by ArcherSlaye
+* [README.MD] from now
 * Remake info
 * Added lot of zombie skins
 * Added lot of humans skins only on [Classic,Hardcore & Riot] While [Nemesis & Boss] is in Development
@@ -9,9 +10,9 @@ Zombie Reloaded Franug Edition [Remake] by ArcherSlaye
 * Edited ZR translations
 * Edited Quake cofig & translations
 * Fixed all zombies infect claw
-* Removed all Zombies Vision
+* Removed all Zombies Visions
 *  ===================
-* Remake Descriptions
+* Remake Description
 *  ===================
 * Zombie|Classic|Hardcore|Riot|Skins
 * Classic Zombie [Animation]
@@ -41,5 +42,4 @@ Zombie Reloaded Franug Edition [Remake] by ArcherSlaye
 * El Gigante
 * Titan Hulk [CF]
 *  ===========================
-*  TO BE CONTINUED FOR MODELS
-* [FILE WILL UPLOAD TO PUBLIC SOON :) ]
+* [FILE WILL UPLOAD TO PUBLIC REAL SOON :) ]
