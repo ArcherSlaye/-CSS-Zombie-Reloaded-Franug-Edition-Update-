@@ -1,15 +1,17 @@
-Zombie Reloaded Franug Edition [Remake] by ArcherSlaye
+Zombie Reloaded Franug Edition Edited by ArcherSlaye. Original made by Franc1sco
+* If you want the original Zombie-Reloaded go to the website https://forums.alliedmods.net/showthread.php?s=20cf0e2f0d4e532da89fcbee30c82442&t=277597
 * [README.MD] from now
 * Remake info
-* Added lot of zombie skins
-* Added lot of humans skins only on [Classic,Hardcore & Riot] While [Nemesis & Boss] is in Development
-* Added 3 gamemodes for ZR [Classic,Nemesis,Boss,Hardcore & Riot]
-* Added new ambient sounds for [Nemesis & Boss]
-* Added Grenade Effects
-* Added Quake Sounds
+* Added More Zombie Skins
+* Added More Humans Skins only on [Classic,Hardcore & Riot] While [Nemesis & Boss] is in Development
+* Added 3 Gamemodes for ZR [Classic,Nemesis,Boss,Hardcore & Riot]
+* Added New Ambient & Song in [Nemesis & Boss]
+* Added Zombie Explode
+* Added Repeat Killer
 * Edited ZR translations
-* Edited Quake cofig & translations
-* Fixed all zombies infect claw
+* Fixed Zombie
+* Fixed Zombies infect claw
+* Fixed Nemesis Bugs
 * Removed all Zombies Visions
 *  ===================
 * Remake Description
