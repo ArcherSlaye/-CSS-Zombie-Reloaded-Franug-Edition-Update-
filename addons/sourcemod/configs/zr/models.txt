@@ -1,0 +1,432 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                            Model configuration
+//
+// See Model Configuration (3.5) section in the manual for detailed info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Attribute:   Description:
+// ----------------------------------------------------------------------------
+// name     Name of model file, without extension.
+// path     Path to model files. MUST end with "/".
+// team     Model type:
+//              "zombies"
+//              "humans"
+// access   Access type:
+//              "public"        - Everyone can use the model.
+//              "admins"        - Model can only be used by admins.    
+//              "hidden"        - Model is excluded from public random selections.
+//              "motherzombies" - Model can only be used by mother zombies.
+//              "group"         - Use group authentication.
+// group    If access is "group": A SourceMod group name. Otherwise blank ("").
+
+"models"
+{
+    "t_phoenix"
+    {
+        "name"      "t_phoenix"
+        "path"      "models/player/lextalionis/zombine/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+    
+    "t_leet"
+    {
+        "name"      "t_leet"
+        "path"      "models/player/lextalionis/zombie_hc/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "fatty"
+    {
+        "name"      "fatty"
+        "path"      "models/player/elis/fty/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "joker"
+    {
+        "name"      "joker"
+        "path"      "models/player/kodua/venom_joker/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "hulk"
+    {
+        "name"      "hulk"
+        "path"      "models/player/Cf_TitanHulk/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "hunter"
+    {
+        "name"      "hunter"
+        "path"      "models/player/techknow/left4dead/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "witch"
+    {
+        "name"      "witch"
+        "path"      "models/player/techknow/left4dead/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "majini"
+    {
+        "name"      "majini"
+        "path"      "models/player/vad36apron/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+    "gigante"
+    {
+        "name"      "gigante"
+        "path"      "models/player/slow/gigante/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "poison"
+    {
+        "name"      "poison"
+        "path"      "models/player/zombies/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+    
+    "behemoth"
+    {
+        "name"      "behemoth"
+        "path"      "models/player/kodua/blind_behemoth/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "suitor"
+    {
+        "name"      "suitor"
+        "path"      "models/player/kodua/suitor/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "slasher"
+    {
+        "name"      "slasher"
+        "path"      "models/player/kodua/super_slasher_rave/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "demolisher"
+    {
+        "name"      "demolisher"
+        "path"      "models/player/kodua/demolisher/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "uberevil"
+    {
+        "name"      "uberevil"
+        "path"      "models/player/kodua/uberevil/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "Volatile"
+    {
+        "name"      "Volatile"
+        "path"      "models/player/kodua/volatile/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+     
+    "zh_classic"
+    {
+        "name"      "zh_classic"
+        "path"      "models/player/zh/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "zh_fast"
+    {
+        "name"      "zh_fast"
+        "path"      "models/player/zh/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+
+    }
+    
+    "zh_corpse002"
+    {
+        "name"      "zh_corpse002"
+        "path"      "models/player/zh/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+ 
+    "t_guerilla"
+    {
+        "name"      "t_guerilla"
+        "path"      "models/player/ics/hellknight_red/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "mummy"
+    {
+        "name"      "mummy"
+        "path"      "models/player/raijin/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+    
+    "nemesis"
+    {
+        "name"      "nemesis"
+        "path"      "models/player/vad36nemesis/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+	
+    "tank"
+    {
+        "name"      "tank"
+        "path"      "models/player/kodua/zombie_tanker/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "yeti"
+    {
+        "name"      "Yeti"
+        "path"      "models/player/vad36yeti/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "meatman"
+    {
+        "name"      "meatman"
+        "path"      "models/player/techknow/meatman/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+    
+    "Bolter"
+    {
+        "name"      "bolter"
+        "path"      "models/player/kodua/bolter/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "crimson"
+    {
+        "name"      "crimson"
+        "path"      "models/player/kodua/crimson/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+     "rogue"
+    {
+        "name"      "rogue"
+        "path"      "models/player/kodua/rogue/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "naruto"
+    {
+        "name"      "naruto"
+        "path"      "models/player/raijin/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "volatile"
+    {
+        "name"      "volatile"
+        "path"      "models/player/kodua/volatile/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "trevor"
+    {
+        "name"      "trevor"
+        "path"      "models/player/vad36gtav/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "michael"
+    {
+        "name"      "michael"
+        "path"      "models/player/vad36gtav/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "franklin"
+    {
+        "name"      "franklin"
+        "path"      "models/player/vad36gtav/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "lonewolf"
+    {
+        "name"      "lonewolf"
+        "path"      "models/player/kodua/lonewolf/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+
+    "ivan"
+    {
+        "name"      "ivan"
+        "path"      "models/player/kodua/ivan/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "leet"
+    {
+        "name"      "leet"
+        "path"      "models/player/kirby/clean/"
+        "team"      "humans"
+        "access"    "public"
+        "group"     ""
+    }
+
+    "kaneki"
+    {
+        "name"      "kaneki"
+        "path"      "models/player/custom/neru/"
+        "team"      "humans"
+        "access"    "admins"
+        "group"     "zr_admin"
+    }
+
+    "alice"
+    {
+        "name"      "alice"
+        "path"      "models/player/custom_player/arcaea/yoyal8/"
+        "team"      "humans"
+        "access"    "admins"
+        "group"     "zr_admin"
+    }
+    
+    "dante"
+    {
+        "name"      "dante"
+        "path"      "models/player/slow/dmc4/dante/"
+        "team"      "humans"
+        "access"    "admins"
+        "group"     "zr_admin"
+    }
+
+    "mona"
+    {
+        "name"      "mona"
+        "path"      "models/player/custom/genshin/"
+        "team"      "humans"
+        "access"    "admins"
+        "group"     "zr_admin"
+    }
+
+    // Special model examples:
+    // -----------------------
+    
+    // Only admins can use this zombie model.
+    //"admin_zombie"
+    //{
+    //    "name"      "volatile"
+    //    "path"      "models/player/kodua/volatile/"
+    //    "team"      "zombies"
+    //    "access"    "admins"
+    //    "group"     "zr_admin"
+    //}
+    
+    // Only members of the zr_vip group in SourceMod can use this human model.
+    //"vip_human"
+    //{
+    //    "name"      "vipmodel"
+    //    "path"      "models/player/vip/"
+    //    "team"      "humans"
+    //    "access"    "group"
+    //    "group"     "zr_vip"
+    //}
+    
+    // This model will be excluded from public random selections. Only classes
+    // that use "random_hidden" or explicit specify this model will be able to use it.
+    //"mona"
+    //{
+    //    "name"      "mona"
+    //    "path"      "models\player\legion\anime\mona\"
+    //    "team"      "humans"
+    //    "access"    "admins"
+    //    "group"     "zr_admin"
+    //}
+
+//"crimson"
+    //{
+    //    "name"      "hiddenmodel"
+    //    "path"      "models/player/kodua/crimson/"
+    //    "team"      "humans"
+    //    "access"    "hidden"
+    //    "group"     "speedy"
+    //}
+}
