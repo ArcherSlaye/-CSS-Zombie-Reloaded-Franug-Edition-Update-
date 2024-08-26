@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\volatile\body_d"
+	"$bumpmap" "models\player\kodua\volatile\body_n"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "3"
+	"$phongfresnelranges" "[0.05 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "5"
+	"$rimlightboost" ".5"
+}
