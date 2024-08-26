@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\player\vad36gtav\franklin/franklin_eyes"
+	"$bumpmap" "models\player\vad36gtav\franklin/franklin_eyes_normal"
+	"$phong" "1"
+	"$phongexponent" "5"
+
+	"$phongboost" ".1"	
+	"$phongfresnelranges"	"[.1 0.2 1]"
+	"$rimlight" "1"										
+	"$rimlightexponent" "88"							
+	"$rimlightboost" "0.2"
+}
+
