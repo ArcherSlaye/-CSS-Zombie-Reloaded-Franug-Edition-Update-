@@ -1,0 +1,17 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/player/vad36CSO2\tr_leet/tr_leet_glasslens"
+	
+
+// Specularity
+	"$envmap" 			"env_cubemap"
+	"$envmapmask" "models/player/vad36CSO2\tr_leet/tr_leet_glasslens_normal"
+
+
+// Transparency
+	"$translucent" 1
+	"$nocull" 1
+
+	
+	
+}

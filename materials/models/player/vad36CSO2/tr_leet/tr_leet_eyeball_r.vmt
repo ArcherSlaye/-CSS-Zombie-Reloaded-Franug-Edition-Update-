@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/player/vad36CSO2/tr_leet/ct_gign_eyeball_r"
+       "$envmap" 			"env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.3
+	"$envmapsaturation" 0.7
+	"$envmaptint" "[ 0.36 0.36 0.36 ]"
+
+}

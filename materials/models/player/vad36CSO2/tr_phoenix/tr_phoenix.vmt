@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/player/vad36CSO2\tr_phoenix/tr_phoenix"
+	"$bumpmap"		    "models/player/vad36CSO2\tr_phoenix/tr_phoenix_normal"
+	"$envmap"		"env_cubemap"
+	"$envmaptint"		"[ 0.300000 0.300000 0.300000 ]"
+	"$envmapcontrast"	0.50000
+	"$envmapsaturation"	0.500000
+	"$envmapboost"		0.25000
+
+	"$phong"		1            //사용 1, 안사용 0
+	"$phongboost"		1.6.000       //강도
+	"$phongexponent"	8.000000     //범위
+	"$phongFresnelboost"	2.000000     //시선에 따른 광택
+	"$phongFresnelexponent"	3.000000     //범위  
+	"$phongtint"   "[1 1 1]"	     // 퐁효과에 더해질 (R,G,B)값
+
+	"$bumpscale"		1.000000
+
+
+        "$normalmapalphaenvmapmask" 1       //범프맵 알파 채널을 스펙큐러 마스크로 사용 1
+         $UseModelLight   1
+
+
+}
