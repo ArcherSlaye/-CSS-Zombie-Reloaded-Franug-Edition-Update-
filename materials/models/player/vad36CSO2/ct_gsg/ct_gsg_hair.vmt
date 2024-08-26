@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	"$baseTexture" "models\player\vad36CSO2\ct_gsg/ct_gsg_hair"	
+	"$bumpmap" "models\player\vad36CSO2\ct_gsg/ct_gsg_hair_normal"
+	 $nocull 1
+	 $alphatest 1
+	 $ALPHATESTREFERENCE	0.1
+
+}
