@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/slow/masterchief_pack/masterchief_blue/ogg_masterchief"
+	"$bumpmap" "models/player/slow/masterchief_pack/masterchief/ogg_masterchief_bump"
+
+	"$phong" "1"
+	"$phongexponent" "2"
+	"$phongboost"	".1"
+	"$phongfresnelranges"	"[.15 .45 1]"
+}

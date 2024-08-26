@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/slow/masterchief_pack/masterchief/ogg_visor"
+//	"$bumpmap" "models/player/slow/masterchief_pack/masterchief/ogg_visor_bump"
+
+
+	"$envmap" "env_cubemap"
+//	"$envmapmask" "models/player/slow/masterchief_pack/masterchief/ogg_visor"
+	"$envmaptint" "[1 .88 .45]" 
+	"$normalmapalphaenvmapmask" 0
+	"$envmapcontrast" .45
+	"$envmapsaturation" 1
+}

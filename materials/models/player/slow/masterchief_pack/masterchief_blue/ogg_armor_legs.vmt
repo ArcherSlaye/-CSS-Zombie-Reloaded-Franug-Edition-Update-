@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/slow/masterchief_pack/masterchief_blue/ogg_masterchief"
+//	"$bumpmap" "models/player/slow/masterchief_pack/masterchief_blue/ogg_masterchief_bump"
+
+
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1 1 1]" 
+	"$envmapmask" "models/player/slow/masterchief_pack/masterchief_blue/ogg_masterchief"
+	"$envmapcontrast" .65
+	"$envmapsaturation" .86
+}
