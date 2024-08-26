@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 	"models/player/slow/dmc4/dante/slow_gloves"
+	"$bumpmap"		"models/player/slow/dmc4/dante/slow_gloves_bump"
+
+ 	"$phong" 			"1"
+	"$phongexponent" 		"3.5"
+	"$phongboost"		"1.35"
+	"$phongfresnelranges"	"[.15 .3 .5]"
+
+	"$rimlight"			"1"
+	"$rimlightexponent"	"2"	
+	"$rimlightboost"		".85"
+}
+

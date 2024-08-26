@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/player/slow/dmc4/dante/slow_eyes"
+
+	"$translucent" 1
+
+	"$envmap" 				"env_cubemap"
+	"$envmapmask"			"models/player/slow/dmc4/dante/slow_eyes_shader_spec"
+	"$envmaptint" 			"[1 1 1]"
+	"$envmapcontrast" 		.4
+	"$envmapsaturation" 	 	.8
+
+}

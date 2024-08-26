@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 	"models/player/slow/dmc4/dante/slow_brooch"
+	"$bumpmap"		"models/player/slow/dmc4/dante/slow_brooch_bump"
+
+ 	"$phong" 			"1"
+	"$phongexponent" 		"3"
+	"$phongboost"		"3"
+	"$phongfresnelranges"	"[.15 .3 .5]"
+}

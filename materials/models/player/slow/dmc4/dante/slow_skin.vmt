@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 	"models/player/slow/dmc4/dante/slow_skin"
+	"$bumpmap"		"models/player/slow/dmc4/dante/slow_skin_bump"
+
+ 	"$phong" 			"1"
+	"$phongexponent" 		"4"
+	"$phongtint"		"[1 .7 .7]"
+	"$phongboost"		"3.25"
+	"$phongfresnelranges"	"[.15 .3 .5]"
+
+	"$rimlight"			"1"
+	"$rimlightexponent"	"2"	
+	"$rimlightboost"		".85"
+}
+
