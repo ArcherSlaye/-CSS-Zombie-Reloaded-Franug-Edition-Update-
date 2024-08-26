@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\ivan\parts"
+	"$bumpmap" "models\player\kodua\ivan\parts_n"
+
+	$color2 "{5 5 5}"
+
+	"$envmap" 			"env_cubemap"
+	"$envmaptint" "[0.1 0.1 0.1]"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "3"
+	"$phongfresnelranges" "[0.1 .5 1]"
+}
