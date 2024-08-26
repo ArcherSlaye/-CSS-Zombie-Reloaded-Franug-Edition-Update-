@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\suitor\suitor"
+	"$bumpmap" "models\player\kodua\suitor\suitor_n"
+
+	"$phong" "0"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0 .5 1]"
+}

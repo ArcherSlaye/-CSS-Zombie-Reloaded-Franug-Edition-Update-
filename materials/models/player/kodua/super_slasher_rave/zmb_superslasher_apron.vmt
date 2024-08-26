@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\super_slasher_rave\zmb_superslasher_apron"
+	"$bumpmap" "models\player\kodua\super_slasher_rave\zmb_superslasher_apron_n"
+
+	"$selfillum" "1"
+	"$selfillummask" "models\player\kodua\super_slasher_rave\zmb_superslasher_apron_self_illum_mask"
+	"$selfillumtint" "[1 1 1]"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.05 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "5"
+	"$rimlightboost" ".15"
+}
