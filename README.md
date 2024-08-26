@@ -13,6 +13,4 @@ Zombie Reloaded Franug Edition Remaked by ArcherSlaye. Original made by Franc1sc
 * Fixed Zombies infect claw
 * Fixed Nemesis fov Bugs
 * Removed all Zombies Visions
-* [ITS NOT FINISHED]
-* [COMING SOON FOR CFG,MATERIALS,MODELS]
 * --------------------------------
