@@ -1,0 +1,15 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/player/kirby/clean/umbrella_leet/umbrella_leet_glass"
+	
+
+// Specularity
+	"$envmap" 			"env_cubemap"
+	"$envmapmask" "models/player/kirby/clean/umbrella_leet/umbrella_leet_glass_spec"
+
+
+// Transparency
+	"$translucent" 1
+	"$nocull" 1
+	
+}

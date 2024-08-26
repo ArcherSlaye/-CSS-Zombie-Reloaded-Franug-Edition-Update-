@@ -1,0 +1,17 @@
+vertexlitgeneric
+{
+$basetexture "models\player\kuristaja\l4d2\spitter\spitter_color"
+$bumpmap "models\player\kuristaja\l4d2\spitter\spitter_normal"
+
+$phongexponenttexture "models\player\kuristaja\l4d2\spitter\spitter_exponent"
+$phong 1
+$phongboost 3
+
+$halflambert 0
+$phongfresnelranges "[.2 .5 5]"
+//$ambientocclusion 1
+//$diffuseexp "1.0"
+
+
+
+}

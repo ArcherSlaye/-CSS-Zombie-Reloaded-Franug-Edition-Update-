@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models\player\kirby\clean\umbrella_leet\umbrella_leet"
+        "$envmap" 			"env_cubemap"
+       "$bumpmap" "models\player\kirby\clean\umbrella_leet\umbrella_leet_normal"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.3
+	"$envmapsaturation" 0.7
+	"$envmaptint" "[ 0.36 0.36 0.36 ]"
+}
