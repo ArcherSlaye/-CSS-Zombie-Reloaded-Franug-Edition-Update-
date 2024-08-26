@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\player\vad36gtav\michael/michael_hair_color"
+	"$bumpmap" "models\player\vad36gtav\michael/michael_hair_normal"
+
+$translucent 1
+}
+
