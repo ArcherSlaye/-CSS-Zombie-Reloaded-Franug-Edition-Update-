@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\player\vad36ghost\seal_soccom_assault_a_col"
+        "$bumpmap" "models\player\vad36ghost\seal_soccom_assault_nml"
+
+ 	"$phong" "1"
+	"$phongexponent" "94.8"
+	"$phongboost"	"0.35"
+	"$phongfresnelranges"	"[.1 .1 1]"
+}

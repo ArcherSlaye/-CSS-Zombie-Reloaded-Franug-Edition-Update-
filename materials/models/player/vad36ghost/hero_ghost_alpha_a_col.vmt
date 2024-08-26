@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\player\vad36ghost\hero_ghost_alpha_a_col"
+ 	"$envmap" 			"env_cubemap"
+       "$bumpmap" "models\player\vad36ghost\hero_ghost_alpha_a_nml"
+
+              "$nocull" 1
+	"$translucent" 1
+	//"$envmap" "env_cubemap"
+	"$envmapcontrast" "1.0"
+	"$envmaptint" "[1 1 1]"
+	"$envmapsaturation" "[1 1 1]"
+}
