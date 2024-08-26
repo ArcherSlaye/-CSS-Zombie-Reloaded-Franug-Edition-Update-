@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/player/techknow/l4d/witch"
+	"$bumpmap"	"models/player/techknow/l4d/witch_n"
+        "$phong" 1
+        "$allowdiffusemodulation" 0
+        "$phongfresnelrange_0" ".01"
+        "$phongfresnelrange_1" ".15"
+        "$phongfresnelrange_2" 1
+        "$phongfresnelranges" "[.01 .15 1]"
+        "$phongtint" "[0.8 0.8 1]"
+	"$phongexponent" "9"
+	"$phongboost"	".75"
+        "$ambientocclusion" 1
+}

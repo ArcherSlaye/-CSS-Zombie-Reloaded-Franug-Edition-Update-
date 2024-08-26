@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/techknow/meatman/body"
+	"$bumpmap" "models/player/techknow/meatman/body_n"
+	"$nocull" 1
+ 	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost"	"0.7"
+	"$phongfresnelranges"	"[1 1 1]"
+}

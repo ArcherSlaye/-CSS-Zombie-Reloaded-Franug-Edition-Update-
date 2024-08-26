@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\player\vad36apron/em2000_02epu_BM_em2000_02epu_BMout"
+	"$alphatest" 1
+
+//	"$bumpmap" "models\player\vad36apron/arms_bump"
+
+}

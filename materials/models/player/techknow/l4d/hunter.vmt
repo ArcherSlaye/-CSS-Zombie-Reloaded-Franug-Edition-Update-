@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/techknow/l4d/hunter"
+	"$bumpmap"	"models/player/techknow/l4d/hunter_n"
+	"$envmapcontrast" 0.3
+	"$envmapsaturation" 0.7
+	"$envmaptint" "[ 0.36 0.36 0.36 ]"
+}

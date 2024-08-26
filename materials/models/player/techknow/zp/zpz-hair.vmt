@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+ 	"$basetexture" "models/player/techknow/zp/z2-hair"
+        "$nocull" 1
+        "$translucent" "1"
+}

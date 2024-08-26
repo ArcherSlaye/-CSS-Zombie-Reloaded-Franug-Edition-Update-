@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\player\vad36apron/em2000_03zubon_BM_em2000_03zubon_BMout"
+
+	"$bumpmap" "models\player\vad36apron/legs_bump"
+
+
+//	"$alphatest" 1
+//	"$nocull" 1
+
+	$phong 1
+
+	$phongexponenttexture  "models\player\vad36apron/legs_bump"
+$phongboost "1.5"
+$phongexponent 5
+$phongtint "[.85 .85 1]"
+$phongfresnelranges "[.5 .85 30]"
+
+}

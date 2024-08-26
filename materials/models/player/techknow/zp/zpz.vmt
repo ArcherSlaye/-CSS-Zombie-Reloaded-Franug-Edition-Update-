@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/player/techknow/zp/z2"
+        "$bumpmap" "models/player/techknow/zp/z2_n"
+        "$nocull" 1
+	"$envmapcontrast" 0.3
+	"$envmapsaturation" 0.7
+	"$envmaptint" "[ 0.36 0.36 0.36 ]"
+}

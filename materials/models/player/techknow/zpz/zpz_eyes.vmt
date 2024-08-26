@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/player/techknow/zp/z2"
+        "$bumpmap" "models/player/techknow/zp/z2_n"
+        "$nocull" 1
+    	"$translucent" 1
+	"$model" 1
+        "$selfillum" 1
+ 	"$surfaceprop" 	"glass"
+}
