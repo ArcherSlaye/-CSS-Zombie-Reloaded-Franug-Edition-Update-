@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\rogue02\rogue02"
+	"$bumpmap" "models\player\kodua\rogue02\rogue02_n"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.05 .5 1]"
+}

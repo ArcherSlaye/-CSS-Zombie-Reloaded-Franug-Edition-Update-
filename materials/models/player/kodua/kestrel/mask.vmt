@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\kestrel\mask"
+	"$bumpmap" "models\player\kodua\kestrel\mask_n"
+
+	"$phong" "0"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "33"
+	"$rimlightboost" ".1"
+}

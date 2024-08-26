@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\lonewolf\legs"
+	"$bumpmap" "models\player\kodua\lonewolf\legs_n"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "0.5"
+	"$phongfresnelranges" "[0 .5 1]"
+}
