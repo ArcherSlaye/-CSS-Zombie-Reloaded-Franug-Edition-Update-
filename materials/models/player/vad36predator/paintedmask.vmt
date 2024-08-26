@@ -1,0 +1,13 @@
+vertexlitgeneric
+{
+$baseTexture "models\player\vad36predator\paintedmask"
+$bumpmap "models\player\vad36predator\paintedmask_n"
+$phong 1
+$phongboost "0.5"
+$phongexponent 5
+$phongtint "[.85 .85 1]"
+$phongfresnelranges "[.3 .65 30]"
+$ambientocclusion 1
+$nocull 1
+$diffuseexp "1.5"
+}

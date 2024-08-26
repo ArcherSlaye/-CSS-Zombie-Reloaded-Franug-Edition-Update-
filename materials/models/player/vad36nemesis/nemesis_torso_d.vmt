@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	$basetexture			models\player/vad36nemesis\nemesistorso_d
+	
+	$envmap env_cubemap
+	$envmaptint "[ .01 .01 .02 ]"
+	$normalmapalphaenvmapmask 1
+
+	$bumpmap				models\player/vad36nemesis\nemesistorso_n
+	$phongexponenttexture	models\player/vad36nemesis/nemesistorso_s
+	
+ 	$phong 1
+	$phongboost .5 
+	$phongalbedoboost 5
+	$phongtint "[0.7 0.8 1]"
+	
+
+}

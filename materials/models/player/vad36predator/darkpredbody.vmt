@@ -1,0 +1,9 @@
+vertexlitgeneric
+{
+$baseTexture "models\player\vad36predator\darkpredbody"
+$bumpmap "models\player\vad36predator\darkpredbody_n"
+$alphatest 1
+$ambientocclusion 1
+$nocull 1
+$diffuseexp "1.5"
+}
