@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\archer\feets"
+	"$bumpmap" "models\player\kodua\archer\feets_n"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.05 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "33"
+	"$rimlightboost" ".1"
+}

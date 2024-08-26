@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\archer\mask"
+	"$bumpmap" "models\player\kodua\archer\mask_n"
+
+	"$selfillum" "1"
+	//"$selfillumtint" "[1 2 1]"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.05 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "33"
+	"$rimlightboost" ".1"
+}
