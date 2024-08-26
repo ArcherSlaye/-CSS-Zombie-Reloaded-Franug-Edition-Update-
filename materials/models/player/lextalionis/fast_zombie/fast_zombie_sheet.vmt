@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\zombie_fast\fast_zombie_sheet"
+	"$bumpmap" "models\zombie_fast\fast_zombie_sheet_normal"
+	"$normalmapalphaenvmapmask" "1"
+	"$surfaceprop" "flesh"
+
+}
