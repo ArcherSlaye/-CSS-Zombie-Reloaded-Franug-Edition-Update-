@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/arcaea/yoyal8/mana_01"
+	"$lightwarptexture" "models/player/arcaea/public/lightwarp_2"
+	"$nocull" 1
+	"$nodecal" 1
+}
