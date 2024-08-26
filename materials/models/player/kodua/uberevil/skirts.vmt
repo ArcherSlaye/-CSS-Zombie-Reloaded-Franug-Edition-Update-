@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\uberevil\skirts"
+	"$bumpmap" "models\player\kodua\uberevil\skirts_n"
+
+	"$nocull" "1"
+
+	"$alphatest" "1"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0 .5 1]"
+}

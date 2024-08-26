@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\venom_joker\legs"
+	"$bumpmap" "models\player\kodua\venom_joker\legs_n"
+
+	"$selfillum" "1"
+	"$selfillummask" "models\player\kodua\venom_joker\legs"
+	"$selfillumtint" "[1 10 1]"
+}
