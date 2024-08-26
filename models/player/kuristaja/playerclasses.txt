@@ -1,0 +1,1580 @@
+// ============================================================================
+//
+//                    Zombie:Reloaded Class configuration
+//
+// See Class Configuration (3.7) in the manual for detailed info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Attribute:               Values:     Description:
+// ----------------------------------------------------------------------------
+// enabled                  yes/no      Enables or disables a class.
+// team                     number      Specifies what team the class belongs to:
+//                                      0 - Zombies
+//                                      1 - Humans
+//                                      2 - Admin mode classes (incomplete feautre!)
+// team_default             yes/no      Marks the class as the default class in the team.
+// flags                    number      Special class flags (bit field). To combine multiple flags
+//                                      use a sum of the flag values. Available flags:
+//                                      1 - Admins only
+//                                      2 - Mother zombies only
+// group                    text        Restrict class to member of this SourceMod group. Leave blank for no restriction.
+// sm_flags		    text	Restrict class to client of this SourceMod admin flag. Leave blank for no restriction.
+// name                     text        The class name used in class menu.
+// description              text        The class description used in class menu.
+// model_path               text        Path to model to use. Relative to cstrike folder.
+// model_skin_index         number      Model skin index to use if model support multiple skins. First skin is 0.
+// alpha_initial            number      Initial transparency setting.
+// alpha_damaged            number      Transparency when damaged.
+// alpha_damage             number      How much damage to do before switching alpha.
+// overlay_path             text        Overlay displayed at the player.
+// nvgs                     yes/no      Give and turn on night vision.
+// fov                      number      Field of view value. 90 is default.
+// has_napalm               yes/no      Allows player to throw napalm grenades. Humans only.
+// napalm_time              decimal     Napalm burn duration. Zombies only.
+// immunity_mode            text        Special immunity modes. Some modes only works on humans or zombies:
+//                                      "none"   - Instant infection.
+//                                      "kill"   - Humans are instantly killed instead of turning zombies when attacked by zombies.
+//                                      "full"   - Completely immune. Humans can't be infected, zombies don't receive damage or knock back. Careful with this, it might not be that fun.
+//                                      "infect" - Humans are immune to infections until HP go below a threshold. Threshold at zero enable stabbing to death.
+//                                      "damage" - Zombies are immune to damage from humans/grenades, but still vulnerable to knock back.
+//                                      "delay"  - Delay infection for a certain number of seconds.
+//                                      "shield" - Shield against infections (humans) or knock back (zombies) for a certain amount of seconds (similar to TF2's  bercharge). Deploy with "zshield" command.
+// immunity_amount          number      Immunity data value (humans only). Depends on the immunity mode above:
+//                                      "infect" - HP threshold. Infection will be allowed when HP go below this value. Zero will enable stabbing to death.
+//                                      "delay"  - Number of seconds the infection is delayed since first hit by a zombie.
+//                                      "shield" - Number of seconds the shield is active.
+// immunity_cooldown        number      Number of seconds of cooldown for temporary immunity actions, depending on mode.
+//                                      "delay"  - Number of seconds the delay is reduced every time a zombie attack, while a delayed infection is in progress.
+//                                      "shield" - Number of seconds the player has to wait before the shield can be used again.
+// no_fall_damage           on/off      Disables fall damage.
+// health                   number      How many health points to give.
+// health_regen_interval    decimal     Sets the regeneration interval. 0 to disable.
+// health_regen_amount      number      How much HP to give per interval.
+// health_infect_gain       number      How much HP to give when the player infects someone. Zombies only.
+// kill_bonus               number      How many points to give per kill. Zombies only.
+// speed                    decimal     The player speed. In LMV mode 300 is normal speed, 600 is double speed.
+// knockback                decimal     Force of the knockback when shot at. Zombies only.
+// jump_height              decimal     Multiplier of the players jump height. 0.0 means no jump boost, 1.0 is normal.
+// jump_distance            decimal     Multiplier of the players jump distance. 0.0 means no forward jump boost, 1.0 is normal.
+
+"classes"
+{
+    // ------------------------------------------
+    //
+    // Zombie classes
+    //
+    // ------------------------------------------
+    "zombie_corpse"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "yes"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Corpse"
+        "description"           "Exhaustion"
+        
+        // Model
+        "model_path"            "models/player/zh/zh_corpse002.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "10.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+    
+    "zombie_combine"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Zombine Headcrab"
+        "description"           "Combiner Zombie"
+        
+        // Model
+        "model_path"            "models/player/lextalionis/zombine/t_phoenix.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0" 
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "7.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_hunter"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Hunter"
+        "description"           "NEW"
+        
+        // Model
+        "model_path"            "models/player/techknow/left4dead/hunter.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0" 
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "7.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_witch"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Witch"
+        "description"           "NEW"
+        
+        // Model
+        "model_path"            "models/player/techknow/left4dead/witch.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0" 
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "7.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_spitter"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Spitter"
+        "description"           "NEW"
+        
+        // Model
+        "model_path"            "models/player/kuristaja/l4d2/spitter.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0" 
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "7.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_yeti"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Yeti Zombie"
+        "description"           "Snow Zombie"
+        
+        // Model
+        "model_path"            "models/player/vad36yeti/yeti.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "7.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_classic"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Zombie Classic"
+        "description"           "First Zombie"
+        
+        // Model
+        "model_path"            "models/player/zh/zh_classic.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "7.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    
+    "zombie_headcrab"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Zombie Headcrab"
+        "description"           "Zombie Headcrab Classic"
+        
+        // Model
+        "model_path"            "models/player/lextalionis/zombie_hc/t_leet.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "15.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_demogorgon"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Fast Zombie"
+        "description"           "Screaming Zombie"
+        
+        // Model
+        "model_path"            "models/player/zh/zh_fast.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "15.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_fatty"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Fat"
+        "description"           "Bomber"
+        
+        // Model
+        "model_path"            "models/player/elis/fty/fatty.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "15.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_bolter"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Bolter"
+        "description"           "Lightning"
+        
+        // Model
+        "model_path"            "models/player/kodua/bolter/bolter.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "15.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_meatman"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Meatman"
+        "description"           "Alive Meat as Zombie"
+        
+        // Model
+        "model_path"            "models/player/techknow/meatman/meatman.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "15.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_evil"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Skeleton"
+        "description"           "Power Zombie"
+        
+        // Model
+        "model_path"            "models/player/kodua/uberevil/uberevil.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "15.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_Knight"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Hell Knight"
+        "description"           "Rage Beast"
+        
+        // Model
+        "model_path"            "models/player/ics/hellknight_red/t_guerilla.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "10.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_mommy"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Mummy"
+        "description"           "Awake by MZ"
+        
+        // Model
+        "model_path"            "models/player/raijin/mummy.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "10.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "zombie_volatile"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Volatile"
+        "description"           "SkinTitan"
+        
+        // Model
+        "model_path"            "models/player/kodua/volatile/volatile.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "10.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1000"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "mother_zombie_classic"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "2"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Mother Zombie"
+        "description"           "Grave|Waking"
+        
+        // Model
+        "model_path"            "models/player/zh/zh_classic.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "0"
+        "napalm_time"           "5.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "1"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1500"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "mother_zombie_fast"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "no"
+        "flags"                 "2"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Mother zombie fast"
+        "description"           "Screaming Zombie"
+        
+        // Model
+        "model_path"            "models/player/zh/zh_fast.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "0"
+        "napalm_time"           "5.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "1"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "1500"
+        "health_regen_interval" "1.75"
+        "health_regen_amount"   "153"
+        "health_infect_gain"    "500"
+        "kill_bonus"            "5"
+        
+        "speed"                 "320"
+        "knockback"             "3.0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+    
+    // ------------------------------------------
+    //
+    // Human classes
+    //
+    // ------------------------------------------
+    
+    "human_normal"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "yes"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Human"
+        "description"           "Survivor"
+        
+        // Model
+        "model_path"            "default"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+    
+    "human_vip"
+    {
+        // General
+        "enabled"               "no"
+        "team"                  "1"
+        "team_default"          "yes"
+        "flags"                 "0"
+        "group"                 ""      // Write the name of a SourceMod group for vip players ("zr_vip" for instance), then make it in SourceMod.
+	"sm_flags"		""
+        
+        "name"                  "VIP Human"
+        "description"           "VIP|Surivor"
+        
+        // Model
+        "model_path"            "default"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "150"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+    
+    "human_mona"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "1"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Mona"
+        "description"           "Only use for Admins"
+        
+        // Model
+        "model_path"            "models/player/custom/genshin/mona.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "200"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_naruto"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "1"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Naruto"
+        "description"           "Only use for Admins"
+        
+        // Model
+        "model_path"            "models/player/raijin/naruto.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "200"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+     }
+
+     "human_kaneki"
+     {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "1"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Kaneki"
+        "description"           "Only use for Admins"
+        
+        // Model
+        "model_path"            "models/player/custom/neru/kaneki.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "250"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+     }
+
+     "human_alice"
+     {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "1"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Alice"
+        "description"           "Only use for Admins"
+        
+        // Model
+        "model_path"            "models/player/custom_player/arcaea/yoyal8/alice.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "250"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+    
+    "human_crimson"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Crimson"
+        "description"           "Neon Survivor"
+        
+        // Model
+        "model_path"            "models/player/kodua/crimson/crimson.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_lonewolf"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Lonewolf"
+        "description"           "Bio Survivor"
+        
+        // Model
+        "model_path"            "models/player/kodua/lonewolf/lonewolf.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_trevor"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Trevor"
+        "description"           "GTA V Member"
+        
+        // Model
+        "model_path"            "models/player/vad36gtav/trevor.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_franklin"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Franklin"
+        "description"           "GTA V Member"
+        
+        // Model
+        "model_path"            "models/player/vad36gtav/franklin.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_michael"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Michael"
+        "description"           "GTA V Member"
+        
+        // Model
+        "model_path"            "models/player/vad36gtav/michael.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_ivor"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Ivor"
+        "description"           "Bald man"
+        
+        // Model
+        "model_path"            "models/player/kodua/ivan/ivan.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_leet"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Emblem Leet"
+        "description"           "Assaulter"
+        
+        // Model
+        "model_path"            "models/player/kirby/clean/leet.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+
+    "human_rogue"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+	"sm_flags"		""
+        
+        "name"                  "Rogue"
+        "description"           "Tatto Man"
+        
+        // Model
+        "model_path"            "models/player/kodua/rogue/rogue.mdl"
+        "model_skin_index"      "0"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "0"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "310"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+}
