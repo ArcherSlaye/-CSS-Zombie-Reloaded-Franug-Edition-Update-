@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/colateam/nemesis/NemesisHead"
+	"$bumpmap" "models/player/colateam/nemesis/NemesisHead_N"
+
+
+
+  	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost"	".35"
+	"$phongfresnelranges"	"[.15 .45 1]"
+
+
+}
