@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\blind_behemoth\head"
+	"$bumpmap" "models\player\kodua\blind_behemoth\head_n"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0 .5 1]"
+}

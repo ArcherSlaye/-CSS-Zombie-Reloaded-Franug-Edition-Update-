@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\player\kodua\blind_behemoth\leg2"
+	"$bumpmap" "models\player\kodua\blind_behemoth\leg2_n"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "0.5"
+	"$phongfresnelranges" "[0 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "33"
+	"$rimlightboost" ".1"
+}
